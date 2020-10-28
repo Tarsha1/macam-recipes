@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import CocktailDetails from './Components/CocktailDetails';
 
 const Cocktails = () => {
 	const [cocktails, setCocktails] = useState([]);
@@ -9,16 +8,14 @@ const Cocktails = () => {
 		fetch(url)
 			.then((res) => res.json())
 			.then((resJson) => {
-				setCocktails(resJson.strDrink);
+				setCocktails(resJson.drinks);
 			})
 			.catch(console.error);
 	}, []);
 	return (
 		<section classname='container'>
 			{cocktails.map((cocktail) => (
-				<Link
-					to={`/details/${cocktail.strDrinkThumb}`}
-					key={cocktail.strDrinkThumb}>
+				<Link to={`/details/${cocktail.idDrink}`} key={cocktail.idDrink}>
 					<div className='card'>
 						<div>{cocktail.strDrink}</div>
 						<div className='card-image'>
