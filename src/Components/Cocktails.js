@@ -8,24 +8,48 @@ const Cocktails = () => {
 		fetch(url)
 			.then((res) => res.json())
 			.then((resJson) => {
+				console.log(resJson.drinks);
 				setCocktails(resJson.drinks);
 			})
 			.catch(console.error);
 	}, []);
 	return (
-		<section classname='container'>
-			{cocktails.map((cocktail) => (
-				<Link to={`/details/${cocktail.idDrink}`} key={cocktail.idDrink}>
-					<div className='card'>
-						<div>{cocktail.strDrink}</div>
-						<div className='card-image'>
-							<img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+		<section className='container'>
+			{/* {cocktails?.map((cocktail) => {
+				return (
+					<Link to={`/details/${cocktail.idDrink}`} key={cocktail.idDrink}>
+						<div className='card'>
+							<h3>{cocktail.strDrink}</h3>
+
+							<div className='card-image'>
+								<img
+									src={cocktail.strDrinkThumb}
+									alt={cocktail.strDrink}
+									align='center'
+								/>
+							</div>
+							<div className='card-title'></div>
 						</div>
-						<div className='card-title'></div>
-						<h3>{cocktail.strDrink}</h3>
-					</div>
-				</Link>
-			))}
+					</Link>
+				);
+			})} */}
+			{cocktails.map((cocktail) => {
+				return (
+					<Link to={`/details/${cocktail.idDrink}`} key={cocktail.idDrink}>
+						<div className='card'>
+							<h3>{cocktail.strDrink}</h3>
+							<div className='card-image'>
+								<img
+									src={cocktail.strDrinkThumb}
+									alt={cocktail.strDrink}
+									align='center'
+								/>
+							</div>
+							<div className='card-title'></div>
+						</div>
+					</Link>
+				);
+			})}
 		</section>
 	);
 };

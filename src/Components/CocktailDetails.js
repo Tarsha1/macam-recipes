@@ -19,7 +19,9 @@ const CocktailDetails = ({ match }) => {
 			<img src={cocktail.strDrinkThumb} alt='' />
 			<div className='details'></div>
 			<h2>{cocktail.strDrink}</h2>
-			<h3>Instructions</h3>
+			<h4 className='ingredient'>Ingredients:</h4>
+			<p>{cocktail.instructions}</p>
+			<h3 className='instruction'>Instructions:</h3>
 			<p>{cocktail.strInstructions}</p>
 		</div>
 	);

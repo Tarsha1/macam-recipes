@@ -7,6 +7,7 @@ function App() {
 	return (
 		<>
 			<header>
+				<h2>MaCAM</h2>
 				<h1>
 					<a href='/'>Cocktail Recipes</a>
 				</h1>
