@@ -15,24 +15,6 @@ const Cocktails = () => {
 	}, []);
 	return (
 		<section className='container'>
-			{/* {cocktails?.map((cocktail) => {
-				return (
-					<Link to={`/details/${cocktail.idDrink}`} key={cocktail.idDrink}>
-						<div className='card'>
-							<h3>{cocktail.strDrink}</h3>
-
-							<div className='card-image'>
-								<img
-									src={cocktail.strDrinkThumb}
-									alt={cocktail.strDrink}
-									align='center'
-								/>
-							</div>
-							<div className='card-title'></div>
-						</div>
-					</Link>
-				);
-			})} */}
 			{cocktails.map((cocktail) => {
 				return (
 					<Link to={`/details/${cocktail.idDrink}`} key={cocktail.idDrink}>

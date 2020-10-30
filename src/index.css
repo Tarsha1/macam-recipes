@@ -31,30 +31,18 @@ header {
    background-color: gray;
    padding: 1rem;
    border-radius: 20%;
-  
-  
-   
-   
-   
 }
 
-.card-image {
-
-
-
-
-
-}
-
-.details-container {
+.details-container, p {
   display: inline;
   background: lightgray;
 }
 
-.details-container, p {
+.details-container {
   width: 50%;
-  height: 200px;
-  background: rgb(172, 163, 163);
+  height: 200px; 
+ background: rgb(172, 163, 163); 
+  
 }
 
 img{

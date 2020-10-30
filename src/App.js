@@ -18,6 +18,7 @@ function App() {
 					path='/details/:id'
 					render={(routerProps) => (
 						<CocktailDetails match={routerProps.match} />
+					
 					)}
 				/>
 			</main>
