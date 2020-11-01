@@ -12,8 +12,9 @@
 
 ### MVP Goals
 
-1. Fetched the API to the page.
-2. Components (Render content, and list ingredients and measurements, and instructions)
+1. Fetch the API to the page.
+2. Components (Render content, and list ingredients, measurements, and instructions)
+3. Styled by CSS Grid and Flebox.
 
 ## Stretch Goals
 
@@ -21,6 +22,9 @@
 
 ## Unsolved Issues
 
+No stretch goal the search component could not be completed.
+
 ## Technology Used
 
 React, CSS Grid,Flexbox, googleDocs, youTube, cocktaildbapi.com
+References: Instructor: Jen Meade, google, https://reactjs.org/, https://www.w3schools.com/, TA: Tabitha Perry
